@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B490970226522320049BE2E /* MenuModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B49096F226522320049BE2E /* MenuModel.swift */; };
+		0B490972226522DE0049BE2E /* MenuData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B490971226522DE0049BE2E /* MenuData.swift */; };
 		0B4F22512257AD8B00995DAB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B4F22502257AD8B00995DAB /* AppDelegate.swift */; };
 		0B4F22532257AD8B00995DAB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B4F22522257AD8B00995DAB /* ViewController.swift */; };
 		0B4F22562257AD8B00995DAB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B4F22542257AD8B00995DAB /* Main.storyboard */; };
@@ -20,6 +22,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0B49096F226522320049BE2E /* MenuModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuModel.swift; sourceTree = "<group>"; };
+		0B490971226522DE0049BE2E /* MenuData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuData.swift; sourceTree = "<group>"; };
 		0B4F224D2257AD8A00995DAB /* FoodCrate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodCrate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B4F22502257AD8B00995DAB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0B4F22522257AD8B00995DAB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -80,6 +84,8 @@
 			children = (
 				0B71EF812260FE090046C895 /* RestaurantsModel.swift */,
 				0B71EF832260FF130046C895 /* RestaurantData.swift */,
+				0B49096F226522320049BE2E /* MenuModel.swift */,
+				0B490971226522DE0049BE2E /* MenuData.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -175,9 +181,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0B490972226522DE0049BE2E /* MenuData.swift in Sources */,
 				0B4F22532257AD8B00995DAB /* ViewController.swift in Sources */,
 				0B71EF842260FF130046C895 /* RestaurantData.swift in Sources */,
 				0B71EF86226100430046C895 /* SelectRestaurantTableViewController.swift in Sources */,
+				0B490970226522320049BE2E /* MenuModel.swift in Sources */,
 				0B71EF822260FE090046C895 /* RestaurantsModel.swift in Sources */,
 				0B4F22512257AD8B00995DAB /* AppDelegate.swift in Sources */,
 				0BD0B78D225C362A00DD584B /* CustomCellTableViewCell.swift in Sources */,
