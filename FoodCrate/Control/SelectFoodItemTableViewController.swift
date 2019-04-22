@@ -14,7 +14,8 @@ class SelectFoodItemTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        tableView.rowHeight = UITableView.automaticDimension
+        tableView.estimatedRowHeight = 50
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -40,8 +41,8 @@ class SelectFoodItemTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "FoodItemCell", for: indexPath)
         
         cell.textLabel?.text = getRestaurant?.menu[indexPath.row].name
-        // Configure the cell...
         
+        cell.detailTextLabel?.text = "$" + String(getRestaurant!.menu[indexPath.row].price)
         return cell
     }
     
