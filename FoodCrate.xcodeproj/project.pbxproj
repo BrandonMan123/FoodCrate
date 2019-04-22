@@ -21,9 +21,11 @@
 		0BB68CF2226D6DB0002C6D83 /* OrderFoodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BB68CF1226D6DB0002C6D83 /* OrderFoodViewController.swift */; };
 		0BD0B78D225C362A00DD584B /* CustomCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD0B78B225C362A00DD584B /* CustomCellTableViewCell.swift */; };
 		0BD0B78E225C362A00DD584B /* CustomCellTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0BD0B78C225C362A00DD584B /* CustomCellTableViewCell.xib */; };
+		253E0BB3E9EADFF8E105A082 /* Pods_FoodCrate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D74D0F09EFE39F6E9D612287 /* Pods_FoodCrate.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		07D0C274A7C6EDB103C549AE /* Pods-FoodCrate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodCrate.release.xcconfig"; path = "Pods/Target Support Files/Pods-FoodCrate/Pods-FoodCrate.release.xcconfig"; sourceTree = "<group>"; };
 		0B49096F226522320049BE2E /* MenuModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuModel.swift; sourceTree = "<group>"; };
 		0B490971226522DE0049BE2E /* MenuData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuData.swift; sourceTree = "<group>"; };
 		0B49097322678BD40049BE2E /* SelectFoodItemTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectFoodItemTableViewController.swift; sourceTree = "<group>"; };
@@ -40,6 +42,8 @@
 		0BB68CF1226D6DB0002C6D83 /* OrderFoodViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderFoodViewController.swift; sourceTree = "<group>"; };
 		0BD0B78B225C362A00DD584B /* CustomCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCellTableViewCell.swift; sourceTree = "<group>"; };
 		0BD0B78C225C362A00DD584B /* CustomCellTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomCellTableViewCell.xib; sourceTree = "<group>"; };
+		3D68EAD43A9405D7D4F92DEB /* Pods-FoodCrate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodCrate.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FoodCrate/Pods-FoodCrate.debug.xcconfig"; sourceTree = "<group>"; };
+		D74D0F09EFE39F6E9D612287 /* Pods_FoodCrate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FoodCrate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				253E0BB3E9EADFF8E105A082 /* Pods_FoodCrate.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,6 +63,8 @@
 			children = (
 				0B4F224F2257AD8A00995DAB /* FoodCrate */,
 				0B4F224E2257AD8A00995DAB /* Products */,
+				BA4F80B3BA06F68D7B877C3F /* Pods */,
+				495B2C3D942DD042E298D807 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -115,6 +122,23 @@
 			path = Control;
 			sourceTree = "<group>";
 		};
+		495B2C3D942DD042E298D807 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D74D0F09EFE39F6E9D612287 /* Pods_FoodCrate.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BA4F80B3BA06F68D7B877C3F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3D68EAD43A9405D7D4F92DEB /* Pods-FoodCrate.debug.xcconfig */,
+				07D0C274A7C6EDB103C549AE /* Pods-FoodCrate.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -122,9 +146,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0B4F225F2257AD9800995DAB /* Build configuration list for PBXNativeTarget "FoodCrate" */;
 			buildPhases = (
+				FECCB95372BF7FC24145AB59 /* [CP] Check Pods Manifest.lock */,
 				0B4F22492257AD8A00995DAB /* Sources */,
 				0B4F224A2257AD8A00995DAB /* Frameworks */,
 				0B4F224B2257AD8A00995DAB /* Resources */,
+				3B9ABDDD17D7843B3FEF9D08 /* [CP] Embed Pods Frameworks */,
+				1B35BA4796170C7F55DEB1E7 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -181,6 +208,77 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1B35BA4796170C7F55DEB1E7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-FoodCrate/Pods-FoodCrate-resources.sh",
+				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleSignIn.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FoodCrate/Pods-FoodCrate-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3B9ABDDD17D7843B3FEF9D08 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-FoodCrate/Pods-FoodCrate-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FoodCrate/Pods-FoodCrate-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FECCB95372BF7FC24145AB59 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FoodCrate-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0B4F22492257AD8A00995DAB /* Sources */ = {
@@ -340,16 +438,18 @@
 		};
 		0B4F22602257AD9800995DAB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3D68EAD43A9405D7D4F92DEB /* Pods-FoodCrate.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = N582TJ9X3R;
 				INFOPLIST_FILE = FoodCrate/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "N-a.FoodCrate";
+				PRODUCT_BUNDLE_IDENTIFIER = org.cate.cs.FoodCrate;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
@@ -359,16 +459,18 @@
 		};
 		0B4F22612257AD9800995DAB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 07D0C274A7C6EDB103C549AE /* Pods-FoodCrate.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = N582TJ9X3R;
 				INFOPLIST_FILE = FoodCrate/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "N-a.FoodCrate";
+				PRODUCT_BUNDLE_IDENTIFIER = org.cate.cs.FoodCrate;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
