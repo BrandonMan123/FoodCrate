@@ -8,6 +8,8 @@
 
 import Foundation
 
+var placeholder = [FoodItem(name: "nil", price: 0, description: "nil")]
+
 var PacificHealthFoodsMenuData = [
     FoodItem(name: "Fruit Freeze", price: 7.00, description: "Orange juice, strawberries, banana & blueberries"),
     FoodItem(name: "Menehune", price: 7.00, description: "Pineapple juice, lime, wheatgrass, spinach, pineapple, mango & banana"),

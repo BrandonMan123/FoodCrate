@@ -8,6 +8,6 @@
 
 import Foundation
 let RestaurantData = [
-    Restaurant(name: "Pacific Health Foods", description: "Smoothies and sandwhiches"),
-    Restaurant(name: "Lucky Llama Coffee", description: "Coffee and Acai Bowls")
+    Restaurant(name: "Pacific Health Foods", description: "Smoothies and sandwhiches", menu: PacificHealthFoodsMenuData ),
+    Restaurant(name: "Lucky Llama Coffee", description: "Coffee and Acai Bowls", menu: LuckyLlamaMenuData)
 ]

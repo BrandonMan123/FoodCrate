@@ -8,10 +8,12 @@
 
 import Foundation
 struct Restaurant {
-    var name: String?
-    var description: String?
-    init (name: String?, description: String?){
+    var name: String
+    var description: String
+    var menu: [FoodItem]
+    init (name: String, description: String, menu: [FoodItem]){
         self.name = name
         self.description = description
+        self.menu = menu
     }
 }

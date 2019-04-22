@@ -1,15 +1,17 @@
 //
-//  SelectRestaurantTableViewController.swift
+//  SelectFoodItemTableViewController.swift
 //  FoodCrate
 //
-//  Created by Brandon Man on 12/4/2019.
+//  Created by Brandon Man on 17/4/2019.
 //  Copyright © 2019 Brandon Man. All rights reserved.
 //
 
 import UIKit
 
-class SelectRestaurantTableViewController: UITableViewController {
-    var restaurants:[Restaurant] = RestaurantData
+class SelectFoodItemTableViewController: UITableViewController {
+    var getRestaurant:Restaurant?
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -18,6 +20,7 @@ class SelectRestaurantTableViewController: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        
     }
 
     // MARK: - Table view data source
@@ -29,31 +32,32 @@ class SelectRestaurantTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return RestaurantData.count
+        return (getRestaurant?.menu.count)!
     }
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "RestaurantCell", for: indexPath)
-
-        // Configure the cell...
-        let eachRestaurant = RestaurantData[indexPath.row] as Restaurant
+        let cell = tableView.dequeueReusableCell(withIdentifier: "FoodItemCell", for: indexPath)
         
-        cell.textLabel?.text = eachRestaurant.name
-        cell.detailTextLabel?.text = eachRestaurant.description
+        cell.textLabel?.text = getRestaurant?.menu[indexPath.row].name
+        // Configure the cell...
         
         return cell
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-        let Storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let DestinationViewController = Storyboard.instantiateViewController(withIdentifier: "SelectFoodItemTableViewController") as! SelectFoodItemTableViewController
         
-        DestinationViewController.getRestaurant = RestaurantData[indexPath.row]
-
+        let Storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let DestinationViewController = Storyboard.instantiateViewController(withIdentifier: "OrderFoodViewController") as! OrderFoodViewController
+        
+        DestinationViewController.foodSelected = (getRestaurant?.menu[indexPath.row].name)!
+        
         self.navigationController?.pushViewController(DestinationViewController, animated: true)
+ 
+        
     }
+
     /*
     // Override to support conditional editing of the table view.
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
@@ -89,32 +93,14 @@ class SelectRestaurantTableViewController: UITableViewController {
     }
     */
 
-    
+    /*
     // MARK: - Navigation
 
-    /*
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        
-        if segue.identifier == "ShowMenu"{
-            
-            if let destination = segue.destination as? SelectFoodItemTableViewController{
-                print ("Segue destiniation is SelectFoodItemTableViewController")
-                
-                if let indexPath = tableView.indexPathForSelectedRow?.row{
-                    
-                    if let objectToPass = RestaurantData[indexPath] as Restaurant?{
-                        
-                        destination.getRestaurant = objectToPass
-                        
-                    }
-                }
-            }
-        }
- 
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
     }
-    
     */
+
 }
