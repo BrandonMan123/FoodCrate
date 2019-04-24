@@ -125,7 +125,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kih-rb-afG">
-                                <rect key="frame" x="120" y="521" width="135" height="57"/>
+                                <rect key="frame" x="120" y="521" width="134" height="57"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="57" id="xda-oH-2Sf"/>
                                 </constraints>
@@ -176,7 +176,6 @@
                             <constraint firstAttribute="trailingMargin" secondItem="Kih-rb-afG" secondAttribute="trailing" constant="105" id="f5o-58-zkD"/>
                             <constraint firstItem="tsZ-c7-Zpk" firstAttribute="leading" secondItem="Orf-pw-Hyo" secondAttribute="leadingMargin" id="kYo-rL-wK9"/>
                             <constraint firstAttribute="trailingMargin" secondItem="kPA-Nn-gwC" secondAttribute="trailing" constant="124" id="mGn-hd-14O"/>
-                            <constraint firstItem="x9P-4v-PbJ" firstAttribute="trailing" secondItem="Kih-rb-afG" secondAttribute="trailing" constant="120" id="pqi-5e-Dye"/>
                             <constraint firstItem="kPA-Nn-gwC" firstAttribute="top" secondItem="Orf-pw-Hyo" secondAttribute="topMargin" constant="28" id="qW2-0b-Qbh"/>
                             <constraint firstItem="nCx-fb-yHn" firstAttribute="top" secondItem="Orf-pw-Hyo" secondAttribute="topMargin" constant="199" id="qZV-CM-oa1"/>
                             <constraint firstAttribute="trailingMargin" secondItem="frK-p3-zGh" secondAttribute="trailing" constant="183" id="qjb-3r-nh6"/>
