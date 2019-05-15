@@ -8,13 +8,19 @@
 
 import UIKit
 import GoogleSignIn
+import GoogleAPIClientForREST
 import Foundation
-
+import Alamofire
+import DLRadioButton
 
 class OrderFoodViewController: UIViewController {
     var foodSelected = String()
     
     
+    private let scopes = [kGTLRAuthScopeSheetsSpreadsheets]
+    private let service = GTLRSheetsService()
+
+
     @IBOutlet weak var FoodItem: UILabel!
     
     override func viewDidLoad() {
@@ -22,9 +28,30 @@ class OrderFoodViewController: UIViewController {
         
         FoodItem.text = foodSelected
         // Do any additional setup after loading the view.
+        
     }
     
+    
+   
+    @IBOutlet weak var venmo: DLRadioButton!
+    
+    @IBOutlet weak var cash: DLRadioButton!
+    
+    @IBAction func orderFood(_ sender: Any) {
+        if venmo.isSelected == false && cash.isSelected == false{
+            print ("please select a payment method")
+        }else{
+            if venmo.isSelected == true{
+                print("venmo payment method selected")
+            }else{
+                print ("cash payment method selected")
+            }
+            
+        }
+    }
 
+    
+    
     /*
     // MARK: - Navigation
 

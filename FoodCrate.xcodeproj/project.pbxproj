@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B386E2822837322002B27C0 /* DLRadioButton.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B386E2722837322002B27C0 /* DLRadioButton.framework */; };
 		0B490970226522320049BE2E /* MenuModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B49096F226522320049BE2E /* MenuModel.swift */; };
 		0B490972226522DE0049BE2E /* MenuData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B490971226522DE0049BE2E /* MenuData.swift */; };
 		0B49097422678BD40049BE2E /* SelectFoodItemTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B49097322678BD40049BE2E /* SelectFoodItemTableViewController.swift */; };
@@ -26,6 +27,7 @@
 
 /* Begin PBXFileReference section */
 		07D0C274A7C6EDB103C549AE /* Pods-FoodCrate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodCrate.release.xcconfig"; path = "Pods/Target Support Files/Pods-FoodCrate/Pods-FoodCrate.release.xcconfig"; sourceTree = "<group>"; };
+		0B386E2722837322002B27C0 /* DLRadioButton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = DLRadioButton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B49096F226522320049BE2E /* MenuModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuModel.swift; sourceTree = "<group>"; };
 		0B490971226522DE0049BE2E /* MenuData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuData.swift; sourceTree = "<group>"; };
 		0B49097322678BD40049BE2E /* SelectFoodItemTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectFoodItemTableViewController.swift; sourceTree = "<group>"; };
@@ -51,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0B386E2822837322002B27C0 /* DLRadioButton.framework in Frameworks */,
 				253E0BB3E9EADFF8E105A082 /* Pods_FoodCrate.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -125,6 +128,7 @@
 		495B2C3D942DD042E298D807 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0B386E2722837322002B27C0 /* DLRadioButton.framework */,
 				D74D0F09EFE39F6E9D612287 /* Pods_FoodCrate.framework */,
 			);
 			name = Frameworks;
@@ -174,6 +178,7 @@
 				TargetAttributes = {
 					0B4F224C2257AD8A00995DAB = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1020;
 					};
 				};
 			};
@@ -242,6 +247,7 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-FoodCrate/Pods-FoodCrate-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/DLRadioButton/DLRadioButton.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleAPIClientForREST/GoogleAPIClientForREST.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
@@ -251,6 +257,7 @@
 			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DLRadioButton.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleAPIClientForREST.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
@@ -456,7 +463,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = org.cate.cs.FoodCrate;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -477,7 +484,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = org.cate.cs.FoodCrate;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
