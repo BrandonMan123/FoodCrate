@@ -19,6 +19,7 @@
 		0B71EF822260FE090046C895 /* RestaurantsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B71EF812260FE090046C895 /* RestaurantsModel.swift */; };
 		0B71EF842260FF130046C895 /* RestaurantData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B71EF832260FF130046C895 /* RestaurantData.swift */; };
 		0B71EF86226100430046C895 /* SelectRestaurantTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B71EF85226100430046C895 /* SelectRestaurantTableViewController.swift */; };
+		0B8B2E8B228C7B7700303E54 /* DataToSend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B8B2E8A228C7B7600303E54 /* DataToSend.swift */; };
 		0BB68CF2226D6DB0002C6D83 /* OrderFoodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BB68CF1226D6DB0002C6D83 /* OrderFoodViewController.swift */; };
 		0BD0B78D225C362A00DD584B /* CustomCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD0B78B225C362A00DD584B /* CustomCellTableViewCell.swift */; };
 		0BD0B78E225C362A00DD584B /* CustomCellTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0BD0B78C225C362A00DD584B /* CustomCellTableViewCell.xib */; };
@@ -41,6 +42,7 @@
 		0B71EF812260FE090046C895 /* RestaurantsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantsModel.swift; sourceTree = "<group>"; };
 		0B71EF832260FF130046C895 /* RestaurantData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantData.swift; sourceTree = "<group>"; };
 		0B71EF85226100430046C895 /* SelectRestaurantTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectRestaurantTableViewController.swift; sourceTree = "<group>"; };
+		0B8B2E8A228C7B7600303E54 /* DataToSend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataToSend.swift; sourceTree = "<group>"; };
 		0BB68CF1226D6DB0002C6D83 /* OrderFoodViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderFoodViewController.swift; sourceTree = "<group>"; };
 		0BD0B78B225C362A00DD584B /* CustomCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCellTableViewCell.swift; sourceTree = "<group>"; };
 		0BD0B78C225C362A00DD584B /* CustomCellTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomCellTableViewCell.xib; sourceTree = "<group>"; };
@@ -100,6 +102,7 @@
 				0B71EF832260FF130046C895 /* RestaurantData.swift */,
 				0B49096F226522320049BE2E /* MenuModel.swift */,
 				0B490971226522DE0049BE2E /* MenuData.swift */,
+				0B8B2E8A228C7B7600303E54 /* DataToSend.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -299,6 +302,7 @@
 				0B490972226522DE0049BE2E /* MenuData.swift in Sources */,
 				0B4F22532257AD8B00995DAB /* ViewController.swift in Sources */,
 				0B71EF842260FF130046C895 /* RestaurantData.swift in Sources */,
+				0B8B2E8B228C7B7700303E54 /* DataToSend.swift in Sources */,
 				0BB68CF2226D6DB0002C6D83 /* OrderFoodViewController.swift in Sources */,
 				0B49097422678BD40049BE2E /* SelectFoodItemTableViewController.swift in Sources */,
 				0B71EF86226100430046C895 /* SelectRestaurantTableViewController.swift in Sources */,

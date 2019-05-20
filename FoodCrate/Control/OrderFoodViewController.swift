@@ -43,6 +43,21 @@ class OrderFoodViewController: UIViewController {
         }else{
             if venmo.isSelected == true{
                 print("venmo payment method selected")
+                Alamofire.request("http://172.17.5.52:8000/api/create/food_crate/" + "{\"testingName\": \"}".addingPercentEncoding(withAllowedCharacters: .urlHostAllowed)!).responseString { response in
+                    
+                    print(response.result.value as Any)
+                    
+                    
+                    
+                    //this is when i request data
+                    
+                    Alamofire.request("http://172.17.5.52:8000/api/request/food_crate/" + "{}".addingPercentEncoding(withAllowedCharacters: .urlHostAllowed)!).responseString { response in
+                        
+                        print(response.result.value as Any)
+                        
+                    }
+                    
+                }
             }else{
                 print ("cash payment method selected")
             }
